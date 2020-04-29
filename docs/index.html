@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>TPNet</title>
+
+  <link href="./assets/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/font.css" rel="stylesheet" type="text/css">
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="container">
+  <div class="title" style="margin: 20pt 50pt;">
+    Trajectory Proposal Network for Safe and Multimodal Motion Prediction
+  </div>
+  <div class="author">
+    <a target="_blank"></a>Liangji Fang</a><sup>1*</sup>&nbsp;
+    <a target="_blank"></a>Qinhong Jiang</a><sup>1*</sup>&nbsp;
+    <a target="_blank"></a>Jianping Shi</a><sup>1</sup>&nbsp;
+    <a href="http://bzhou.ie.cuhk.edu.hk" target="_blank">Bolei Zhou</a><sup>2</sup>&nbsp;
+  </div>
+  <div class="institution">
+    <sup>1</sup>SenseTime Group Limited <br>
+    <sup>2</sup>The Chinese University of Hong Kong <br>
+    <sup>*</sup>Equal contribution.
+  </div>
+  <div class="link">
+    <a href="https://arxiv.org/pdf/2004.12255.pdf" target="_blank">[Paper]</a>&nbsp;
+  </div>
+  <div class="teaser">
+    <img src="./assets/tpnet.png">
+  </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!--====== Overview Section Starts ======-->
+<div class="container">
+  <div class="title">Overview</div>
+  <div class="body">
+    The movements of traffic agents are often regularized by the movable areas,
+    while there might be multiple plausible future paths for the agents.
+    Based on these prior knowledge, we propose a novel two-stage motion prediction framework, called <b>TPNet</b>,
+    both for vehicles and pedestrians.
+    By steering the proposal generation process, safe and multimodal predictions are realized.
+    More importantly, the two-stage pipeline is flexible to encode different prior knowledge into the deep learning method.
+  </div>
+</div>
+<!--====== Overview Section Ends ======-->
+
+
+<!--====== Results Section Starts ======-->
+<div class="container">
+  <div class="title">Results</div>
+  <div class="body">
+    We show the effectiveness of two-stage pipeline, diversity, safety.
+
+    <table width="100%" style="margin: 20pt auto; text-align: left;">
+      <tr>
+        <!-- <td><b>Pose</b></td> -->
+        <!-- <td><b>Age</b></td>
+        <td><b>Gender</b></td> -->
+      </tr>
+      <tr>
+        <td><img src="./assets/tpnet_result.png" width="100%"></img></td>
+        <!-- <td><img src="./assets/age.gif" width="90%"></img></td>
+        <td><img src="./assets/gender.gif" width="90%"></img></td> -->
+      </tr>
+      <tr>
+        <!-- <td><b>Expression</b></td> -->
+        <!-- <td><b>Eyeglasses</b></td>
+        <td><b>Artifacts</b></td> -->
+      </tr>
+      <tr>
+        <!-- <td><img src="./assets/expression.gif" width="90%"></img></td> -->
+        <!-- <td><img src="./assets/eyeglasses.gif" width="90%"></img></td>
+        <td><img src="./assets/artifact.gif" width="90%"></img></td> -->
+      </tr>
+    </table>
+
+    Check more results in the following video.
+
+    <!-- Adjust the frame size based on the demo (Every project differs). -->
+    <div style="position: relative; padding-top: 50%; margin: 20pt auto; text-align: center;">
+      <iframe src="https://www.youtube.com/embed/9iCa2Jspr_k" frameborder=0
+              style="position: absolute; top: 2.5%; left: 2.5%; width: 95%; height: 100%;"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<!--====== Results Section Ends ======-->
+
+
+<!--====== References Section Starts ======-->
+<div class="container">
+  <div class="bibtex">Bibtex</div>
+<pre>
+@inproceedings{fang2020,
+  title     = {Trajectory Proposal Network for Safe and Multimodal Motion Prediction},
+  author    = {Liangji Fang, Qinhon Jiang, Jianping Shi, Bolei Zhou},
+  booktitle = {CVPR},
+  year      = {2020}
+}
+</pre>
+
+
+</body>
+</html>
